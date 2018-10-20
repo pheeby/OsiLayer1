@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Layer1" />
+        <activity android:name=".Layer2" />
+        <activity android:name=".Layer3" />
+        <activity android:name=".Layer4" />
+        <activity android:name=".Layer5" />
+        <activity android:name=".Layer6" />
+        <activity android:name=".Layer7"></activity>
     </application>
 
 </manifest>
