@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.phoebewong.osilayer1">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +25,12 @@
         <activity android:name=".Layer5" />
         <activity android:name=".Layer6" />
         <activity android:name=".Layer7" />
-        <activity android:name=".Quiz7"></activity>
+        <activity android:name=".Quiz7" />
+        <activity android:name=".Quiz5" />
+        <activity android:name=".correctAnswer" />
+        <activity android:name=".incorrectAnswer" />
+        <activity android:name=".videoList" />
+        <activity android:name=".videoPlay"></activity>
     </application>
 
 </manifest>
