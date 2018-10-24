@@ -29,14 +29,18 @@ public class videoPlay extends YouTubeBaseActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_video_play);
         Log.d(TAG,"OnCreate: Starting.");
         mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlay);
-
+        btnPlay = (Button) findViewById(R.id.btnPlay);
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(Provider provider, YouTubePlayer youTubePlayer, boolean b) {
             Log.d(TAG, "onClick: Done initializing");
+            //might have something to do with getting it from the arraylist
+//            Video video1 = VideoDatabase.getVideoArrayList().get(0);
+//            String link = video1.getLink();
+//            youTubePlayer.loadVideo(link);
                 youTubePlayer.loadVideo("xlLBoVUDLvs");
             }
 
@@ -47,6 +51,7 @@ public class videoPlay extends YouTubeBaseActivity{
         };
 
         btnPlay.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "OnClick: Initializing Youtube Player.");

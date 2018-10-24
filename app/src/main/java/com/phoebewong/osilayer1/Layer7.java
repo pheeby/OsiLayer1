@@ -18,10 +18,10 @@ public class Layer7 extends AppCompatActivity {
     ImageView turtle;
     ImageView sloth;
     Button quizButton;
-    ImageView deoxys;
-    ImageView snorlax;
-    ImageView heart1;
-    ImageView heart2;
+//    ImageView deoxys;
+//    ImageView snorlax;
+//    ImageView heart1;
+//    ImageView heart2;
 
     ScaleAnimation sato0 = new ScaleAnimation(1, 0, 1, 1,
             Animation.RELATIVE_TO_PARENT, 0.5f, Animation.RELATIVE_TO_PARENT, 0.5f);
@@ -100,8 +100,8 @@ public class Layer7 extends AppCompatActivity {
         turtle = (ImageView) findViewById(R.id.imageView2);
         sloth = (ImageView) findViewById(R.id.imageView3);
         showTurtle();
-        sato0.setDuration(500);
-        sato1.setDuration(500);
+        sato0.setDuration(300);
+        sato1.setDuration(300);
 
         sato0.setAnimationListener(new AnimationListener() {
             @Override
